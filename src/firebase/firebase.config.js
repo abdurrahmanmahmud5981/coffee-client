@@ -1,17 +1,15 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDr7EZ3RMpdreoYCD73IN4PBxcm8l3qtN4",
-  authDomain: "coffee-store-bd-1.firebaseapp.com",
-  projectId: "coffee-store-bd-1",
-  storageBucket: "coffee-store-bd-1.firebasestorage.app",
-  messagingSenderId: "1062469947979",
-  appId: "1:1062469947979:web:859777d4aa0e8db6a873ce"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId,
 };
 
 // Initialize Firebase 
