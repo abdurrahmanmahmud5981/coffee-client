@@ -23,7 +23,7 @@ const SignIn = () => {
       const loginInfo = {email, lastSignInTime}
 
 
-      fetch(`http://localhost:5000/users/`,{
+      fetch(`https://coffee-store-server-tau-amber.vercel.app/users/`,{
         method: 'PATCH',
         headers:{
           'Content-Type': 'application/json'
